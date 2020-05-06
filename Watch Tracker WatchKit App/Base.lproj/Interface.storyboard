@@ -11,22 +11,50 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Tracker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="121" alignment="left" text="Label" numberOfLines="0" id="YyL-fF-gen"/>
-                        <button width="1" alignment="left" title="Отправить" id="BLo-eI-jMX">
-                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="buttonClicked" destination="AgC-eL-Hgc" id="f62-0O-fnE"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="44" alignment="left" radius="9" id="6FY-PJ-aMu">
+                            <items>
+                                <group width="8.5" alignment="left" id="nk5-oC-17f"/>
+                                <imageView alignment="left" verticalAlignment="center" image="day" id="NKS-K0-fl6"/>
+                                <group width="6" alignment="left" id="3QK-jc-P2l"/>
+                                <group alignment="left" layout="vertical" id="Bkl-BG-SQn">
+                                    <items>
+                                        <label alignment="left" text="День" id="bTm-yq-cv8">
+                                            <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label alignment="left" text="390 касаний" id="jzT-ih-auB">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.9882352941176471" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" height="44" alignment="left" radius="9" id="4Pp-3u-vmD">
+                            <items>
+                                <group width="8" alignment="left" id="Jcu-HI-g0w"/>
+                                <imageView alignment="left" verticalAlignment="center" image="month" id="mZ7-vx-VCB"/>
+                                <group width="6" alignment="left" id="nPd-ns-Pfb"/>
+                                <group alignment="left" layout="vertical" id="S2H-3B-pMc">
+                                    <items>
+                                        <label alignment="left" text="День" id="QVm-rK-kYZ">
+                                            <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label alignment="left" text="390 касаний" id="igx-nb-IPD">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                        </group>
                     </items>
-                    <connections>
-                        <outlet property="button" destination="BLo-eI-jMX" id="oAs-7S-wAU"/>
-                        <outlet property="label" destination="YyL-fF-gen" id="ib6-Qm-gHa"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="351.5"/>
+            <point key="canvasLocation" x="220" y="351"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -60,4 +88,8 @@
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="day" width="21" height="21"/>
+        <image name="month" width="19" height="19"/>
+    </resources>
 </document>

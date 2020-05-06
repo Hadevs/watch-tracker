@@ -134,8 +134,10 @@ class InterfaceController: WKInterfaceController, WKExtendedRuntimeSessionDelega
       "gravityAcceleration": userAccelStr,
       "rotationRate": rotationRateStr,
       "attitude": attitudeStr,
-      "time": "\(Date().timeIntervalSince1970 * 100)"
+      "time": "\(deviceMotion.timestamp)"
     ])
+    print(deviceMotion.timestamp)
+    
   }
   
   override func willActivate() {
@@ -150,7 +152,7 @@ class InterfaceController: WKInterfaceController, WKExtendedRuntimeSessionDelega
   
 }
 
-class RepeatingTimer {  
+class RepeatingTimer {
   let timeInterval: TimeInterval
   
   init(timeInterval: TimeInterval) {
